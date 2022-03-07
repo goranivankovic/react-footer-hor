@@ -1,70 +1,153 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1>React responsiv Footer with props</h1>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h4>react-footer-hor is a React component to build  simple and responsive footer component</h4>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+<h5>Use the npm package manager to install react-footer-hor</h5>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install react-footer-hor
+```
+<h4>styled components must be installed</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install styled-components --save
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</br>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Link with Example](https://goranivankovic.github.io/react-footer-hor/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+</br>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  <img src="https://media.giphy.com/media/VYDcGcFl0UvgtAfcsq/giphy.gif" heigt="500" width="50%" />
+  
+  
+  <h4>
+  Responsive footer with props.</br>
+  Technologies use: react, styled-components, react-hooks, react-icons, css.</br>
+  Don't waste your time building your own footer, just simple downloaded with npm.</br>
+  Required: Node.js, NPM, React.</br>
+  Simple to use send props in your main components. </br>
+  Add colors of: text-headline, border-headline, background, text-rows.<br/>
+  Add row headline-names , row-items, footer-items. </br> 
+  I hope you liked and feel happy to enjoy and download.
+  
 
-### Advanced Configuration
+  </h4>
+  
+  
+  
+  ## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```javascript
 
-### Deployment
+import react from 'react';
+import FooterBar from 'react-footer-hor';
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+function App() {
+  return (
+    <div>
+    
+    
+      <FooterBar 
+   
+    //Chnage background color not requried default grey.
+      bgColor=""
 
-### `npm run build` fails to minify
+      //Change text color not requried default white.
+      text_color=""
+ 
+     //Change headline color of 4 rows not requried default red.
+      headline_color=""
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    //Chenge border color of 4 headline itmes not requried default white.
+      border_color=""
+
+     //Change first row headline required.
+      first_headline_name="NEWS"
+    
+      //Change first row items minimum 3 items. Maximum 5 items for responsiveness items,  it must have unique names required.
+      first_row_items={["Blog","Newsletter","my Book","ABOUT US","Lean in 15 Meals on Gousto"]}
+
+
+     //Change second row headline required.
+      second_headline_name="COMMUNITY"
+ 
+      //Change second row items minimum 3 items. Maximum  5 items for responsiveness items, it must have unique names required.
+      second_row_items={["YouTube Channel","Instagram","Twitter","Facebook","Google"]}
+
+
+     //Change thred row headline required.
+      three_headline_name="CONTACT US"
+
+     //Change thred row items minimum 3 items. Maximum  5 items for responsiveness items, it must have unique required.
+      three_row_items={["Support Centre","Newsletter","Fax & Email","Careers","Join Us"]}
+
+
+     //Change four row headline required.
+      four_headline_name="COMMUNITY"
+
+     //Change fur row items minimum 3 items. Maximum  5 items for responsiveness items, it must have unique name required.
+      four_row_items={["YouTube Channel","Instagram","Twitter","Facebook","Google"]}
+
+
+       
+     //Change footer items minimum 1 items. Maximum 3 items for responsiveness items , it must have unique names required.
+     footer_items={["2022TERMS & CONDITION","@ THE FOOTER APP","SPRIVACY POLICYCOOKIE POLICY"]}
+
+      
+      
+      />
+    
+
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+</br>
+
+</br>
+
+<img  align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png" alt="npm" />https://www.npmjs.com/package/react-footer-hor
+
+</br>
+
+
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />https://github.com/goranivankovic/react-footer-hor
+
+
+</br>
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+<hr></hr>
+
+##
+[developed](https://github.com/goranivankovic)
+
+
